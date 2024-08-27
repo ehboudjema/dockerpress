@@ -20,7 +20,7 @@ Intro
         a2ensite site-le-ssl.conf
         systemctl reload apache2```
 
-    If everything is Ok, you should have a "Service unvailable" when you acces the page https://[YOUR_SITE.com]
+If everything is Ok, you should have a "Service unvailable" when you acces the page https://[YOUR_SITE.com]
 
 3. change the port in the docker-compose file from 3000 to any available protected (keep the same port as in site.conf).
     `docker-compose up -d`
