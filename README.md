@@ -9,7 +9,7 @@ Intro
 1. Change site.com to YOUR_SITE.com in site.conf file and also the port to an available port on your server.
 
 2. - Activate redirection from Apache to you new wordpress site.
-    `cp site.conf /etc/apache2/sites-available/.
+    ```cp site.conf /etc/apache2/sites-available/.
     cd /etc/apache2/sites-available/
     a2ensite site.conf # For new virtual host activation.
     systemctl reload apache2
@@ -18,7 +18,7 @@ Intro
         a2dissite site-le-ssl.conf
         # add the line "ProxyPreserveHost On" on the 443 conf part. For unknow reason, Let's encrypt certbot doesnot copy the line.
         a2ensite site-le-ssl.conf
-        systemctl reload apache2`
+        systemctl reload apache2```
 
     If everything is Ok, you should have a "Service unvailable" when you acces the page https://[YOUR_SITE.com]
 
